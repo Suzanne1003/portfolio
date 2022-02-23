@@ -1,7 +1,38 @@
 /* Police*/
 @font-face {
     font-family: 'playfair';
-    src: url('./PlayfairDisplay-VariableFont_wght.ttf'); }
+    src: url('./PlayfairDisplay-VariableFont_wght.ttf'); 
+}
+@keyframes fade {
+    From {
+    Opacity : 0 ;
+    }
+    50%{
+        opacity: 0.7 ;
+    }
+    To {
+    Opacity : 1 ;
+    }
+    }
+    @keyframes mon_anim{
+        0%{
+        transform: translateY(-5vh);
+        opacity: 0;
+        }
+        100%{
+        transform: translateY(0px);
+        opacity: 1;
+        }}
+body{
+    Animation-name : fade;
+    Animation-delay : 0s ;
+    Animation-duration : 3s ;
+    Animation-iteration-count : 1 ;
+    Animation-name : mon_anim;
+    Animation-delay : 0s ;
+    Animation-duration : 3s ;
+    Animation-iteration-count : 1 ;
+}
 
 .site-logo{
     margin-left: 20px;
@@ -10,7 +41,7 @@
     position: relative;
 }
 
-h1{
+.bonjour{
     font-family: 'playfair';
     font-size: 110px;
     position: absolute;
@@ -32,6 +63,131 @@ p{
     text-align: justify;
     margin-right: 20%;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 8%;
     font-family: 'playfair';
+}
+/*Animation image*/
+.cerveau{
+    width: 90%;
+    height: 50%;
+    margin-left: 5%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+/* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+     -webkit-transition: all 1s ease; /* Safari et Chrome */
+     -moz-transition: all 1s ease; /* Firefox */
+     -ms-transition: all 1s ease; /* Internet Explorer 9 */
+     -o-transition: all 1s ease; /* Opera */
+     transition: all 1s ease;
+     }   
+.cerveau:hover{
+    /* L'image est diminuer de 25% */
+    -webkit-transform:scale(0.90); /* Safari et Chrome */
+    -moz-transform:scale(0.90); /* Firefox */
+    -ms-transform:scale(0.90); /* Internet Explorer 9 */
+    -o-transform:scale(0.90); /* Opera */
+    transform:scale(0.90);
+    }
+.content1{
+    position: relative;
+}
+/* Apparition titre*/
+.site-society{
+    position: absolute;
+    color: bisque;
+    opacity: 100%;
+    margin-left: 23%;
+    margin-top: 20%;
+    font-family: 'playfair';
+    font-size: 110px;
+    top: 20%;
+    left: 12%;
+    /*Animation*/
+    Animation-name : fade;
+    Animation-delay : 0s ;
+    Animation-duration : 7s ;
+    Animation-iteration-count : 1 ;
+    Animation-name : mon_anim;
+    Animation-delay : 0s ;
+    Animation-duration : 7s ;
+    Animation-iteration-count : 1 ;
+ }
+   
+a{
+     font-family: 'playfair';
+     font-size: 60px;
+     position: absolute;
+     margin-top: -550px;
+     margin-left: 600px;
+     color: bisque;
+     outline: none;
+     text-decoration: none;
+ }
+a:link {
+color: bisque;
+outline: none;
+}
+a:visited {
+color: bisque;
+outline: none;
+}
+
+a:focus {
+color: black;
+outline: none;
+}
+
+a:hover {
+color: black;
+outline: none;
+}
+
+a:active {
+color: bisque;
+outline: none;
+}
+.content2{
+    position: relative;
+}
+.illustration{
+    width: 50%;
+    height: 50%;
+    margin-left: 4%;
+    margin-top: -8%;
+    padding-top: 0%;
+    -webkit-transition: all 1s ease; /* Safari et Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* Internet Explorer 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+.illustration:hover{
+
+    -webkit-transform:scale(0.90); /* Safari et Chrome */
+    -moz-transform:scale(0.90); /* Firefox */
+    -ms-transform:scale(0.90); /* Internet Explorer 9 */
+    -o-transform:scale(0.90); /* Opera */
+    transform:scale(0.90);
+}
+#carre {
+    position: absolute;
+    margin-left:55% ;
+    margin-top: -28.3%;
+    width: 570px;
+    height: 386px;
+    background: black;
+    -webkit-transition: all 1s ease; /* Safari et Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* Internet Explorer 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+#carre:hover{
+    -webkit-transform:scale(0.90); /* Safari et Chrome */
+    -moz-transform:scale(0.90); /* Firefox */
+    -ms-transform:scale(0.90); /* Internet Explorer 9 */
+    -o-transform:scale(0.90); /* Opera */
+    transform:scale(0.90);
 }
