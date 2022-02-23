@@ -3,6 +3,11 @@
     font-family: 'playfair';
     src: url('./PlayfairDisplay-VariableFont_wght.ttf'); 
 }
+@font-face {
+    font-family: lato;
+    src: url('./Lato-Regular.ttf');
+}
+/*Effet*/
 @keyframes fade {
     From {
     Opacity : 0 ;
@@ -64,8 +69,41 @@ p{
     margin-right: 20%;
     margin-left: 5%;
     margin-top: 8%;
+    margin-bottom: 0%;
     font-family: 'playfair';
 }
+#bouton{
+    margin-left: 2%;
+    margin-top: -7.5%;
+    font-family: 'playfair';
+    font-size: 20px;
+    text-decoration: none;
+    outline: none;
+    position: absolute;
+}
+#bouton:link {
+    color: black;
+    outline: none;
+    }
+    #bouton:visited {
+    color: black;
+    outline: none;
+    }
+    
+    #bouton:focus {
+    color: black;
+    outline: none;
+    }
+    
+    #bouton:hover {
+    color: black;
+    outline: none;
+    }
+    
+    #bouton:active {
+    color: black;
+    outline: none;
+    }
 /*Animation image*/
 .cerveau{
     width: 90%;
@@ -114,8 +152,8 @@ p{
     Animation-duration : 7s ;
     Animation-iteration-count : 1 ;
  }
-   
-a{
+/*Hyperlien*/
+#bouton2{
      font-family: 'playfair';
      font-size: 60px;
      position: absolute;
@@ -125,26 +163,26 @@ a{
      outline: none;
      text-decoration: none;
  }
-a:link {
+#bouton2:link {
 color: bisque;
 outline: none;
 }
-a:visited {
+#bouton2:visited {
 color: bisque;
 outline: none;
 }
 
-a:focus {
+#bouton2:focus {
 color: black;
 outline: none;
 }
 
-a:hover {
+#bouton2:hover {
 color: black;
 outline: none;
 }
 
-a:active {
+#bouton2:active {
 color: bisque;
 outline: none;
 }
@@ -190,4 +228,87 @@ outline: none;
     -ms-transform:scale(0.90); /* Internet Explorer 9 */
     -o-transform:scale(0.90); /* Opera */
     transform:scale(0.90);
+}
+/*A propos*/ 
+#rectangle{
+    position: absolute;
+    width: 90%;
+    height: 25%;
+    background: red;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+#footer{
+    position: absolute;
+    width: 99%;
+    height: 100%;
+    margin-left: none;
+    background: #303030;
+}
+.description{
+    position: absolute;
+    color: #9D9D9C;
+    font-size: 40px;
+    margin-right: 40%;
+    margin-left: 5%;
+    margin-top: 20%;
+    text-align: justify;
+}
+.logo-cv{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 70%;
+    width: 200px;
+    height: auto;
+
+}
+/*Hyperlien de mail*/
+#mail{
+    font-family: 'playfair';
+    position: absolute;
+    color: #FFF;
+    outline: none;
+    text-decoration: none;
+}
+#mail:link {
+color: #FFF;
+outline: none;
+}
+#mail:visited {
+color: #9D9D9C;
+outline: none;
+}
+
+#mail:focus {
+color: black;
+outline: none;
+}
+
+#mail:hover {
+color: black;
+outline: none;
+}
+
+#mail:active {
+color: #9D9D9C;
+outline: none;
+}
+#CV{
+    position: absolute;
+    background-color: #303030;
+    color: #FFF;
+    border:  #FFF 1px solid;
+    font-family: 'lato';
+    font-size: 12px;
+    margin-left: 69%;
+    margin-top: 40%;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#CV:hover{
+    background-color: #FFF;
+    color: #303030;
+    position: absolute;
+    text-decoration: none;
 }
